@@ -1,0 +1,98 @@
+.works-top {
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(199);
+  }
+}
+
+.works {
+  position: relative;
+  z-index: 3;
+}
+
+.works__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(510);
+    width: 100%;
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.works__block {
+  @include mq(md) {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    // margin-top: rem(66);
+    // margin-bottom: rem(240);
+  }
+}
+
+.works__body {
+  text-align: center;
+  padding-bottom: rem(21);
+  margin-bottom: rem(116);
+  @include mq(md) {
+    margin-bottom: initial;
+    padding-bottom: initial;
+    max-width: rem(511);
+    width: 100%;
+    // margin-top: rem(85);
+  }
+}
+
+.works__title {
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "Works";
+    font-size: rem(50);
+    color: rgba($color: $line-color, $alpha: 0.2);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $second-font-family;
+    @include mq(md) {
+      font-size: rem(110);
+      top: 66%;
+      right: -16%;
+      left: initial;
+    }
+  }
+}
+
+.works__swiper {
+  margin-top: rem(48);
+  padding-bottom: rem(29);
+  @include mq(md) {
+    max-width: rem(589);
+    width: 100%;
+    margin-right: rem(32);
+    padding-bottom: rem(40);
+    margin-top: initial;
+  }
+}
+
+.works__heading {
+  margin-top: rem(-8);
+  margin-bottom: rem(21);
+  @include mq(md) {
+    margin-bottom: rem(48);
+    margin-top: rem(32);
+  }
+}
+
+.works__btn {
+  @include mq(md) {
+    text-align: left;
+  }
+}

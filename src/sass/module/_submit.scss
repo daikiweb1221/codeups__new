@@ -1,0 +1,55 @@
+.submit-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(20);
+  font-weight: $regular;
+  padding: rem(11) rem(8) rem(8) rem(8);
+  position: relative;
+  border: rem(1) solid $white;
+  color: $black;
+  letter-spacing: rem(2);
+  background-color: $white;
+  transition: 0.3s;
+  z-index: 0;
+  &:hover {
+    color: $white;
+    border: rem(1) solid white;
+  }
+  @include mq(md) {
+    font-size: rem(16);
+    padding-top: rem(17);
+    padding-bottom: rem(17);
+  }
+}
+
+.submit-btn--size {
+  max-width: rem(335);
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(360);
+    width: 100%;
+  }
+}
+
+.submit-btn::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: $back-color;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+  @include mq(md) {
+    background: $back-color;
+  }
+}
+
+.submit-btn:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

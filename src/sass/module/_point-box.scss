@@ -1,0 +1,36 @@
+.point-box__block {
+  margin-top: rem(54);
+}
+
+.point-box__title {
+  display: inline-block;
+  font-size: rem(20);
+  letter-spacing: rem(0.4);
+  border-radius: rem(32);
+  padding: rem(8) rem(24);
+  border: 1px solid $white;
+  text-align: center;
+  background-color: $black;
+  margin-left: rem(24);
+}
+
+.point-box__desc {
+  padding: rem(56) rem(10) rem(33) rem(10);
+  line-height: 2.1875;
+  letter-spacing: rem(0.4);
+  border: 1px solid $white;
+  margin-top: rem(-20);
+  @include mq(md) {
+    padding: rem(44) rem(20) rem(33) rem(20);
+  }
+}
+
+.point-box__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    max-width: rem(840);
+    width: 100%;
+    margin: auto;
+  }
+}

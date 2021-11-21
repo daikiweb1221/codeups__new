@@ -1,0 +1,22 @@
+.wpcf7-form-control-wrap {
+  width: 100%;
+}
+
+.wpcf7-form-control-wrap input,
+.wpcf7-form-control-wrap textarea {
+  width: 100%;
+  background-color: $white;
+  color: $black;
+  margin-top: rem(16);
+  padding: rem(10);
+  font-size: rem(14);
+  @include mq(md) {
+    max-width: rem(540);
+    width: 100%;
+    margin-top: initial;
+  }
+}
+
+.wpcf7-form-control-wrap textarea {
+  margin-bottom: rem(41);
+}

@@ -1,0 +1,57 @@
+// .pages {
+//   /* 左の表記 */
+//   margin-right: 20px;
+// }
+.wp-pagenavi .current,
+.wp-pagenavi a.page {
+  /* ボタン */
+  margin: 0 rem(8) 0;
+  display: inline-block;
+  border: solid 1px #eee;
+  width: rem(24);
+  height: rem(24);
+  line-height: rem(24);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.wp-pagenavi .current {
+  /* カレント数字 */
+  border: none;
+  background: $white;
+  color: $black;
+}
+.wp-pagenavi a.page:hover {
+  /* マウスオーバー */
+  background: $white;
+  color: $black;
+}
+.wp-pagenavi .first,
+.wp-pagenavi .extend {
+  /* ... */
+  margin-right: 10px;
+}
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  letter-spacing: rem(2);
+  border: 1px solid $white;
+  padding: rem(2) rem(13);
+}
+
+.wp-pagenavi .previouspostslink {
+  margin-right: rem(8);
+  transition: all 0.3s ease;
+}
+.wp-pagenavi .previouspostslink:hover {
+  color: $black;
+  background-color: $white;
+}
+
+.wp-pagenavi .nextpostslink {
+  margin-left: rem(8);
+  transition: all 0.3s ease;
+}
+
+.wp-pagenavi .nextpostslink:hover {
+  color: $black;
+  background-color: $white;
+}

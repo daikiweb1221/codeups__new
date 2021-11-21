@@ -1,0 +1,32 @@
+.not-found-top {
+  margin-top: rem(130);
+}
+
+.not-found__inner {
+  text-align: center;
+}
+
+.not-found__en {
+  font-size: rem(40);
+  letter-spacing: rem(2);
+  color: $label-color;
+  opacity: 0.3;
+  @include mq(md) {
+    font-size: rem(60);
+  }
+}
+.not-found__ja {
+  font-size: rem(20);
+  letter-spacing: rem(2);
+}
+.not-found__ja {
+  margin-top: rem(80);
+}
+
+.not-found__btn {
+  margin-top: rem(90);
+}
+
+.l-not-found__btn {
+  margin-bottom: rem(150);
+}

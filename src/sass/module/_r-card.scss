@@ -1,0 +1,93 @@
+.r-card__body {
+  letter-spacing: rem(1);
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 2;
+  padding-left: rem(23);
+  padding-right: rem(23);
+  padding-bottom: rem(13);
+  padding-top: rem(4);
+  // background-color: $white;
+  // color: $back-color;
+  @include mq(md) {
+    padding-top: rem(4);
+  }
+}
+
+.r-card__title {
+  font-size: rem(18);
+  font-weight: $normal;
+  @include mq(md) {
+    margin-bottom: rem(1);
+  }
+}
+
+.r-card__cat {
+  color: $black;
+  background-color: $label-color;
+  padding-right: rem(3);
+  padding-left: rem(3);
+  display: inline-block;
+  // margin-top: rem(4);
+}
+
+.r-card__img {
+  position: relative;
+  width: 100%;
+  background-color: $black;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 66.5714285714286%;
+  }
+}
+
+.r-card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.r-card__cat-date-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq(md) {
+    margin-top: rem(4);
+  }
+}
+
+.r-card--new {
+  position: relative;
+  &::before {
+    content: "New";
+    position: absolute;
+    text-align: center;
+    top: rem(-15);
+    left: rem(-15);
+    width: rem(60);
+    height: rem(60);
+    border-radius: 50%;
+    background-color: $new-icon-color;
+    color: $back-color;
+    z-index: 100;
+    font-weight: $regular;
+    line-height: rem(60);
+  }
+}
+
+.r-card__date {
+  margin-top: rem(6);
+}
+
+.r-card__desc {
+  @include mq(md) {
+    padding-top: rem(2);
+  }
+}

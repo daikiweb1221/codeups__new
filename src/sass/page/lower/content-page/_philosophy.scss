@@ -1,0 +1,23 @@
+.philosophy-top {
+  padding-top: rem(105);
+}
+
+.philosophy {
+  letter-spacing: rem(2);
+  line-height: normal;
+}
+
+.philosophy__title {
+  text-align: center;
+  font-size: rem(20);
+  margin-bottom: rem(20);
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+
+.philosophy__text {
+  @include mq(md) {
+    text-align: center;
+  }
+}

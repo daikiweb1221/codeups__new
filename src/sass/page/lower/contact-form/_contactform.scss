@@ -1,0 +1,38 @@
+.contactform__text {
+  font-size: rem(14);
+  letter-spacing: rem(0.7);
+  line-height: 1.714285714285714;
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding-bottom: initial;
+    // margin-right: rem(24);
+    width: 22.85714285714295%;
+    text-align: right;
+    margin-right: rem(24);
+  }
+}
+
+.contactform__block {
+  margin-top: rem(31);
+  @include mq(md) {
+    display: flex;
+    margin-top: rem(46.4);
+    // align-items: center;
+    // justify-content: space-between;
+  }
+}
+
+.contactform__block:first-of-type {
+  margin-top: initial;
+}
+
+.contactform__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+.contactform__btn {
+  margin-bottom: rem(150);
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.cards {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.cards__item {
+  display: block;
+  background-color: $white;
+  color: $back-color;
+  transition: all 0.5s ease;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    max-width: calc(100% / 3 - #{rem(25)} * 2 / 3);
+    width: 100%;
+    margin-bottom: rem(48);
+  }
+  &:hover {
+    background-color: $back-color;
+    color: $white;
+    transition: all 0.5s ease;
+  }
+}
+
+.cards__item + .cards__item {
+  @include mq(md) {
+    margin-left: rem(25);
+  }
+}
+
+.cards__item {
+  &:nth-child(3n + 1) {
+    @include mq(md) {
+      margin-left: initial;
+    }
+  }
+}

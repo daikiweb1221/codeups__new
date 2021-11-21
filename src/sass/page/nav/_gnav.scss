@@ -1,0 +1,78 @@
+.gnav {
+  display: none;
+  @include mq(md) {
+    display: block;
+    height: inherit;
+  }
+}
+
+.gnav__block {
+  display: flex;
+  letter-spacing: rem(2);
+  font-weight: $regular;
+  height: inherit;
+}
+
+.gnav__item {
+  margin-left: rem(32);
+  // padding-top: rem(12.5);
+  // padding-bottom: rem(12.5);
+  @include mq(md) {
+    margin-left: rem(30);
+    height: inherit;
+    position: relative;
+  }
+  &::after {
+    content: "";
+    width: 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $label-color;
+    display: block;
+    position: absolute;
+    top: rem(40);
+  }
+
+  &:hover::after {
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid $label-color;
+    position: absolute;
+    top: rem(40);
+  }
+}
+
+.gnav__box {
+  padding-left: rem(32);
+  padding-right: rem(32);
+  background-color: $white;
+  color: $back-color;
+  height: inherit;
+  margin-left: rem(32);
+  transition: all 0.3s;
+  &:hover {
+    background-color: $back-color;
+    color: $white;
+    transition: all 0.3s;
+  }
+  @include mq(md) {
+    margin-left: rem(28);
+  }
+}
+
+.gnav__box .gnav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gnav__block .gnav__box .gnav__item {
+  margin-left: 0;
+}
+
+.gnav__item a {
+  // padding-bottom: rem(9);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

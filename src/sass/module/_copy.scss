@@ -1,0 +1,12 @@
+.copy {
+  text-align: center;
+}
+
+.copy small {
+  font-size: rem(11);
+  letter-spacing: rem(1.2);
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(15);
+  }
+}

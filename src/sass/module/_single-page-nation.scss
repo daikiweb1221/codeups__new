@@ -1,0 +1,40 @@
+.l-single-page-nation {
+  margin-top: rem(102);
+  margin-bottom: rem(102);
+}
+
+.single-page-nation__inner {
+  text-align: center;
+}
+
+.single-page-nation .single-page-nation__inner a {
+  border: 1px solid $white;
+  padding: rem(3) rem(10);
+  letter-spacing: rem(2);
+  transition: all 0.3s ease;
+  @include mq(md) {
+    padding: rem(3) rem(20);
+  }
+}
+
+.single-page-nation .single-page-nation__inner a:hover {
+  background-color: $white;
+  color: $black;
+}
+
+.single-page-nation .single-page-nation__inner a:nth-of-type(2) {
+  margin-left: rem(15);
+  margin-right: rem(15);
+  @include mq(md) {
+    margin-left: rem(60);
+    margin-right: rem(60);
+  }
+}
+
+.single-page-nation__all {
+  transition: all 0.3s ease;
+}
+.single-page-nation__all:hover {
+  background-color: $white;
+  color: $black;
+}

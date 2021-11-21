@@ -1,0 +1,12 @@
+.contact-form-top {
+  margin-top: rem(85);
+}
+
+.contact-form__wrap {
+  @include mq(md) {
+    max-width: rem(740);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

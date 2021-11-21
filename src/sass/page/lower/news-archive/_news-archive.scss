@@ -1,0 +1,17 @@
+.news-archive-top {
+  margin-top: rem(70);
+  margin-bottom: rem(100);
+}
+
+.news-archive__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: rem(910);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}

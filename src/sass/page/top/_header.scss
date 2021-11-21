@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: rem(50);
+  z-index: 99999;
+  background-color: rgba($color: $black, $alpha: 0.5);
+}
+
+.header__inner {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  position: relative;
+  z-index: 10;
+}
+
+.header__logo {
+  max-width: rem(70);
+  width: 100%;
+  margin-left: rem(23);
+  @include mq(md) {
+    max-width: rem(94);
+    margin-left: rem(34);
+    margin-top: rem(3);
+  }
+}
+
+.header__logo img {
+  min-width: rem(70);
+  width: 100%;
+}

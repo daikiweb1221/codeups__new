@@ -1,0 +1,50 @@
+.blog-top {
+  margin-top: rem(99);
+  @include mq(md) {
+    margin-top: rem(210);
+  }
+}
+
+.blog__title {
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "Blog";
+    font-size: rem(50);
+    color: rgba($color: $line-color, $alpha: 0.2);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $second-font-family;
+    @include mq(md) {
+      font-size: rem(110);
+      top: 51%;
+      left: 89%;
+    }
+  }
+}
+
+.blog__block {
+  padding-top: rem(61);
+  // padding-bottom: rem(120);
+  @include mq(md) {
+    padding-top: rem(31);
+    // flex-wrap: wrap;
+  }
+}
+
+.blog__btn {
+  margin-top: rem(-5);
+  text-align: center;
+  padding-bottom: rem(120);
+  @include mq(md) {
+    padding-bottom: rem(148);
+  }
+}
+
+.blog {
+  background-color: initial;
+  position: relative;
+  z-index: 1;
+}

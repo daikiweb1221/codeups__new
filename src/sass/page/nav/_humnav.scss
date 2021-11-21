@@ -1,0 +1,69 @@
+.humnav {
+  /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+  position: fixed;
+  z-index: -999;
+  opacity: 0;
+  /*ナビの位置と形状*/
+  top: 0;
+  width: 100%;
+  background-color: $black;
+  /*動き*/
+  transition: 0.8s;
+  height: 100vh;
+}
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+.humnav.panelactive {
+  opacity: 1;
+  z-index: 9999;
+}
+
+/*ナビゲーションの縦スクロール*/
+.humnav.panelactive .humnav__list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh; /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+.humnav__block {
+  display: none;
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.humnav.panelactive .humnav__block {
+  display: block;
+  text-align: center;
+}
+
+.humnav__item a {
+  color: $white;
+  text-decoration: none;
+  padding-bottom: rem(15);
+  padding-top: rem(15);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: rem(2);
+  font-weight: $regular;
+  &::after {
+    content: "";
+    width: 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $label-color;
+    display: block;
+  }
+  &:hover::after {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid $label-color;
+  }
+}

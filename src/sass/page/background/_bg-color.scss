@@ -1,0 +1,27 @@
+.bg-color {
+  background-color: $back-color;
+  @include mq(md) {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 30%,
+      $back-color 30%,
+      $back-color 100%
+    );
+    padding: rem(80) 0 rem(40);
+    margin-top: rem(33);
+  }
+}
+
+.bg-color--rev {
+  @include mq(md) {
+    background: linear-gradient(
+      90deg,
+      $back-color 0%,
+      $back-color 70%,
+      transparent 70%,
+      transparent 100%
+    );
+    padding-bottom: rem(80);
+  }
+}

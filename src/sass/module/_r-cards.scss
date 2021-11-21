@@ -1,0 +1,37 @@
+.r-cards {
+  @include mq(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.r-cards__item {
+  display: block;
+  background-color: $white;
+  color: $back-color;
+  transition: all 0.5s ease;
+  margin-bottom: rem(24);
+  @include mq(md) {
+    max-width: calc(100% / 4 - #{rem(32)} * 3 / 4);
+    width: 100%;
+  }
+  &:hover {
+    background-color: $back-color;
+    color: $white;
+    transition: all 0.5s ease;
+  }
+}
+
+.r-cards__item + .r-cards__item {
+  @include mq(md) {
+    margin-left: rem(32);
+  }
+}
+
+.r-cards__item {
+  &:nth-child(4n + 1) {
+    @include mq(md) {
+      margin-left: initial;
+    }
+  }
+}

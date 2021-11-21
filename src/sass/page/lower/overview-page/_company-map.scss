@@ -1,0 +1,36 @@
+.company__desc dd {
+  width: 60%;
+  @include mq(md) {
+    width: 86%;
+  }
+}
+
+.company__desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: rem(13);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid $white;
+  @include mq(md) {
+    // justify-content: initial;
+  }
+}
+
+.company-map-top {
+  max-width: rem(1280);
+  width: 100%;
+  margin: auto;
+  margin-top: rem(120);
+  margin-bottom: rem(120);
+}
+
+.company__map-inner {
+  @include mq(md) {
+    max-width: rem(1150);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: auto;
+  }
+}

@@ -1,0 +1,85 @@
+/*リンクの形状*/
+.page-top a {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  width: rem(45);
+  height: rem(45);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s ease;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    left: rem(13);
+    width: rem(18);
+    height: rem(18);
+    border-top: 2px solid $back-color;
+    border-right: 2px solid $back-color;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease;
+  }
+  &:hover::before {
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+  }
+}
+
+.page-top a:hover {
+  background: $back-color;
+}
+
+/*リンクを右下に固定*/
+.page-top {
+  position: fixed;
+  right: rem(20);
+  bottom: rem(48);
+  z-index: 9999;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(rem(100));
+  @include mq(md) {
+    right: rem(31);
+    bottom: rem(58);
+  }
+}
+
+/*　上に上がる動き　*/
+
+.page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(rem(100));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+.page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(rem(100));
+  }
+}

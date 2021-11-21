@@ -1,0 +1,26 @@
+.yellow-border {
+  height: rem(1);
+  background-color: $line-color;
+  position: relative;
+  transform: skewY(61deg);
+  top: rem(648);
+  z-index: 3;
+  @include mq(md) {
+    transform: skewY(45deg);
+    top: rem(791);
+  }
+}
+
+.yellow-border2 {
+  height: rem(3);
+  background-color: $line-color;
+  position: relative;
+  transform: skewY(-75deg);
+  top: rem(52);
+  z-index: 1;
+  @include mq(md) {
+    transform: skewY(135deg);
+    top: rem(576);
+    height: rem(1);
+  }
+}

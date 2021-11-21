@@ -1,0 +1,30 @@
+.relation {
+  text-align: center;
+}
+
+.relation__inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    max-width: rem(1150);
+    padding-right: rem(25);
+    padding-left: rem(25);
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.relation__btn--works-single {
+  padding-top: rem(225);
+  padding-bottom: rem(42);
+}
+
+.relation__btn--blog-single {
+  padding-bottom: rem(30);
+  padding-top: rem(20);
+}
+
+.relation__cards {
+  margin-top: rem(80);
+  margin-bottom: rem(126);
+}

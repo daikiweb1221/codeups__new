@@ -1,0 +1,57 @@
+.contact__title {
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "Contact";
+    font-size: rem(50);
+    color: rgba($color: $line-color, $alpha: 0.2);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $second-font-family;
+    @include mq(md) {
+      font-size: rem(110);
+      top: -17%;
+      left: 19.3%;
+    }
+  }
+}
+
+.contact-top-bg {
+  background-color: $back-color;
+  padding-top: rem(67);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(148);
+    padding-bottom: rem(147);
+  }
+}
+
+// .contact__bg-color {
+//   background-color: $back-color;
+// }
+
+.contact__text {
+  font-size: rem(16);
+  font-weight: $regular;
+  margin-top: rem(20);
+  margin-bottom: rem(40);
+  @include mq(md) {
+    text-align: center;
+    margin-top: rem(17);
+    margin-bottom: rem(57);
+  }
+}
+
+.contact__btn {
+  text-align: center;
+}
+
+.contact__btn--pc {
+  @include mq(md) {
+    font-size: rem(20);
+    padding-top: rem(15);
+    padding-bottom: rem(15);
+  }
+}

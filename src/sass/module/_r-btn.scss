@@ -1,0 +1,55 @@
+.r-btn {
+  max-width: rem(335);
+  width: 100%;
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $regular;
+  padding: rem(11) 0 rem(8);
+  position: relative;
+  border: rem(1) solid $white;
+  color: $white;
+  letter-spacing: rem(2);
+  background-color: $back-color;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 0;
+  &:hover {
+    color: $back-color;
+    border: rem(1) solid $back-color;
+  }
+  @include mq(md) {
+    color: $white;
+    background-color: $back-color;
+    font-size: rem(16);
+    max-width: initial;
+    width: 100%;
+    padding-top: rem(9);
+    padding-bottom: rem(9);
+    &:hover {
+      color: $back-color;
+      border: rem(1) solid $white;
+    }
+  }
+}
+
+.r-btn::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: $white;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+  @include mq(md) {
+    background: $white;
+  }
+}
+
+.r-btn:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}

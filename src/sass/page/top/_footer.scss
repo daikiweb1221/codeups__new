@@ -1,0 +1,85 @@
+.footer-top {
+  background-color: $black;
+  padding-top: rem(52);
+  padding-bottom: rem(62);
+  @include mq(md) {
+    padding-top: rem(36);
+  }
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  width: rem(70);
+  margin-bottom: rem(8);
+}
+
+.footer__nav {
+  font-weight: $regular;
+  letter-spacing: rem(1.2);
+  @include mq(md) {
+    letter-spacing: rem(2);
+  }
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.footer__item {
+  margin-bottom: rem(6);
+  @include mq(md) {
+    margin-bottom: initial;
+    margin-left: rem(32);
+  }
+}
+
+.footer__copy {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(70);
+  }
+}
+
+.footer__item a {
+  color: $white;
+  display: block;
+  &::after {
+    content: "";
+    width: 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $label-color;
+    display: block;
+  }
+  &:hover::after {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid $label-color;
+  }
+}
+
+.footer__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: rem(1250);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  }
+}
