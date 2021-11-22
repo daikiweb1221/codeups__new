@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template/breadcrumb'); ?>
-
+<div class="breadcrumb--top">
+  <?php get_template_part('template/breadcrumb'); ?>
+</div>
+<!-- /.breadcrumb--top -->
 <main class="lower-main">
   <section class="works-single works-single-top">
     <div class="works-single__inner">

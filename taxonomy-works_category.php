@@ -20,7 +20,7 @@
   <div class="cat-wrap cat-wrap-top">
     <div class="cat-wrap__inner">
       <ul class="cat-wrap__items">
-        <li class="cat-wrap__item cat-wrap--all"><a href="<?php echo get_post_type_archive_link('works'); ?>">all</a></li>
+        <li class="cat-wrap__item cat-wrap__item--u"><a href="<?php echo get_post_type_archive_link('works'); ?>">all</a></li>
         <!-- カスタムタクソノミーのカテゴリーを順番に取得  -->
         <?php
         $args = array(
@@ -28,7 +28,11 @@
         );
         $categories = get_categories($args);
         foreach ($categories as $category) {
-          echo '<li class="cat-wrap__item"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+          $term_slug = $category->slug;
+          if (is_tax('works_category',  $term_slug)) :
+            //ここに処理内容を記述
+            echo '<li class="' . ($term_slug) . ' cat-wrap__item"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+          endif;
         }
         ?>
       </ul>

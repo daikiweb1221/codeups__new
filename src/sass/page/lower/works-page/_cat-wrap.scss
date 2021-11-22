@@ -22,11 +22,11 @@
 }
 
 .cat-wrap--all {
-  text-transform: uppercase;
   color: $back-color;
   background-color: $white;
   padding: rem(4) rem(4);
   margin-right: rem(24);
+  text-transform: uppercase;
 }
 
 .cat-wrap__items {
@@ -37,4 +37,8 @@
 
 .cat-wrap__item {
   margin-right: rem(24);
+}
+
+.cat-wrap__item--u {
+  text-transform: uppercase;
 }

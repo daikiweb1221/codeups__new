@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template/breadcrumb'); ?>
+<div class="breadcrumb--top">
+  <?php get_template_part('template/breadcrumb'); ?>
+</div>
 
 <main class="lower-main">
   <section class="blog-single blog-single-top">

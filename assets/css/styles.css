@@ -204,6 +204,11 @@ select::-ms-expand {
   margin: auto;
 }
 
+.breadcrumb--top {
+  padding-top: 66px;
+  padding-top: 4.125rem;
+}
+
 .btn {
   max-width: 335px;
   max-width: 20.9375rem;
@@ -1598,8 +1603,8 @@ select::-ms-expand {
 }
 
 .wp-pagenavi .previouspostslink {
-  margin-right: 16px;
-  margin-right: 1rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1610,8 +1615,8 @@ select::-ms-expand {
 }
 
 .wp-pagenavi .nextpostslink {
-  margin-left: 16px;
-  margin-left: 1rem;
+  margin-left: 8px;
+  margin-left: 0.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -2313,13 +2318,13 @@ input.wpcf7-submit:hover::before {
 }
 
 .cat-wrap--all {
-  text-transform: uppercase;
   color: #333333;
   background-color: #fff;
   padding: 4px 4px;
   padding: 0.25rem 0.25rem;
   margin-right: 24px;
   margin-right: 1.5rem;
+  text-transform: uppercase;
 }
 
 .cat-wrap__items {
@@ -2336,6 +2341,80 @@ input.wpcf7-submit:hover::before {
 .cat-wrap__item {
   margin-right: 24px;
   margin-right: 1.5rem;
+}
+
+.cat-wrap__item--u {
+  text-transform: uppercase;
+}
+
+.php {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.html {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.javascript {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.css {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.ruby {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.wordpress {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.meo {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.seo {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.web {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
+}
+
+.marketing {
+  color: #333333;
+  background-color: #fff;
+  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
 }
 
 .works-page-card-top {
